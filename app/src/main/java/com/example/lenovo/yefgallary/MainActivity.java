@@ -48,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
 
         if(isOnline()){
             if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
-                recyclerView.setLayoutManager(new GridLayoutManager(this,2));
+                recyclerView.setLayoutManager(new GridLayoutManager(this,1));
             }
             else {
-                recyclerView.setLayoutManager(new GridLayoutManager(this,3));
+                recyclerView.setLayoutManager(new GridLayoutManager(this,1));
             }
 
             recyclerView.setAdapter(new MyAdapter(this,myModels));
